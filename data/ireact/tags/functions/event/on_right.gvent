@@ -1,0 +1,14 @@
+> #ireact:event > on_right
+--------------------
+ * when an 'interaction' entity is right clicked (interacted with).
+--------------------
+ [AS] [AT] interaction
+--------------------
+ ...
+--------------------
+- [interaction] is the interaction entity being clicked.
+- player that clicked can be retrieved with `execute on target...`
+
+- trivially, it is important to check whether [interaction] is your datapack's.
+  - ex: `execute unless entity @s[tag=mypack.myinteraction] run return 0` (as first line of subscriber function).
+--------------------
