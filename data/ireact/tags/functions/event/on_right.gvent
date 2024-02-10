@@ -12,3 +12,5 @@
 - trivially, it is important to check whether [interaction] is your datapack's.
   - ex: `execute unless entity @s[tag=mypack.myinteraction] run return 0` (as first line of subscriber function).
 --------------------
+ * APPEND
+--------------------
