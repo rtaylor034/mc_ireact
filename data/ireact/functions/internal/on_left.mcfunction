@@ -4,7 +4,7 @@
 #--------------------
 
 tag @s add _ireact.find
-execute as @e[type=interaction] at @s run function ireact:internal/on_left.trigger
+execute as @e[type=interaction,tag=ireact.left] at @s run function ireact:internal/on_left.trigger
 tag @s remove _ireact.find
 
 scoreboard players reset *trigger.this ireact_var
