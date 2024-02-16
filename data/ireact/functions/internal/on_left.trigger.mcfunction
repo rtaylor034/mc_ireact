@@ -1,7 +1,5 @@
 #> ireact:internal/on_left.trigger
 
-#declare tag/function ireact:event/on_left
-
 scoreboard players set *trigger.this ireact_var 0
 execute on attacker if entity @s[tag=_ireact.find] run scoreboard players set *trigger.this ireact_var 1
 
